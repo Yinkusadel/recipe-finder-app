@@ -6,12 +6,12 @@ export default function page() {
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">About Me</h1>
 
       <div className="bg-white shadow-md rounded-lg p-8">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Hello! I'm Adeleye Olayinka Ibrohim </h2>
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Hello! I&lsquo;m Adeleye Olayinka Ibrohim </h2>
         <p className="text-gray-600 mb-6">
-          I am a passionate <span className='italic font-bold'>Software Engineer</span> driven by a constant desire for growth and innovation. I thrive on building impactful solutions that solve real-world problems. With a deep love for technology, I enjoy creating software that makes a meaningful difference in people's lives.
+          I am a passionate <span className='italic font-bold'>Software Engineer</span> driven by a constant desire for growth and innovation. I thrive on building impactful solutions that solve real-world problems. With a deep love for technology, I enjoy creating software that makes a meaningful difference in people&lsquo;s lives.
 
 
-          My journey in the tech industry has been filled with exciting challenges and continuous learning, and I am always eager to expand my skills, embrace new technologies, and contribute to projects that push the boundaries of what's possible.
+          My journey in the tech industry has been filled with exciting challenges and continuous learning, and I am always eager to expand my skills, embrace new technologies, and contribute to projects that push the boundaries of what&lsquo;s possible.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-700 mb-4">Skills & Interests</h3>

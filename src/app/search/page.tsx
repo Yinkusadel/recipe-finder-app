@@ -1,11 +1,12 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface Recipe {
     title: string;
     image: string;
-    id: number; 
+    id: number;
 }
 
 export default function SearchRecipe() {
@@ -74,13 +75,16 @@ export default function SearchRecipe() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                     {recipes.map((recipe, index) => (
                         <div key={index} className="bg-white p-4 rounded shadow">
-                            <img
+
+
+                            <Image
                                 alt={recipe.title}
                                 className="w-full h-48 object-cover rounded mb-4"
-                                src={recipe.image}
-                                height="200"
-                                width="300"
+                                height={200} // height in pixels
+                                src={recipe.image} // source of the image
+                                width={300} // width in pixels
                             />
+
                             <h3 className="text-xl font-bold mb-2">{recipe.title}</h3>
                             <Link href={`/view-recipe/${recipe.id}`} className="text-green-600 hover:underline">
                                 View Recipe

@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -62,12 +63,12 @@ export default function Page({ params }: { params: Promise<{ RecipeId: string }>
     return (
         <div className="bg-white p-4 rounded shadow flex justify-center">
             <div className='w-[50%]'>
-                <img
+                <Image
                     alt={recipe.title}
                     className="w-full h-72 object-cover rounded mb-4"
-                    src={recipe.image}
-                    height="200"
-                    width="300"
+                    height={200} // height in pixels
+                    src={recipe.image} // source of the image
+                    width={300} // width in pixels
                 />
                 <h3 className="text-xl font-bold mb-2">{recipe.title}</h3>
                 <p className="text-gray-700 mb-4">{recipe.instructions}</p>

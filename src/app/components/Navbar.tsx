@@ -7,7 +7,7 @@ export default function Navbar() {
             <header className="bg-green-600 text-white p-4 sticky top-0">
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-2xl font-bold">
-                        Recipe Finder
+                        Adels  Recipe Finder
                     </h1>
                     <nav>
                         <ul className="flex space-x-4">

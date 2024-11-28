@@ -1,12 +1,13 @@
 "use client";
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 interface Recipe {
     title: string;
     image: string;
-    id: number; 
+    id: number;
 }
 
 export default function RandomRecipe() {
@@ -57,12 +58,12 @@ export default function RandomRecipe() {
                 <>
                     {recipes.map((recipe, index) => (
                         <div key={index} className="bg-white p-4 rounded shadow">
-                            <img
+                            <Image
                                 alt={recipe.title}
                                 className="w-full h-48 object-cover rounded mb-4"
-                                height="200"
-                                src={recipe.image}
-                                width="300"
+                                height={200} // height in pixels
+                                src={recipe.image} // source of the image
+                                width={300} // width in pixels
                             />
                             <h3 className="text-xl font-bold mb-2">{recipe.title}</h3>
                             <Link href={`/view-recipe/${recipe.id}`} className="text-green-600 hover:underline">
